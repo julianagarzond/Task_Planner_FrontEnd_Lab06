@@ -1,4 +1,4 @@
-## Laboratorio 4
+## Laboratorio 6
 
 [![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://task-planner2.herokuapp.com/)
 
