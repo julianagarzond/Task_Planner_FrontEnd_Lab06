@@ -13,8 +13,23 @@ export class App extends Component {
 
      constructor(props) {
             super(props);
-            this.state = {items: [], text: '', priority: 0, dueDate: new Date()};
+            this.state = {userList: []};
 
+
+        }
+
+        componentDidMount() {
+            fetch('https://taskplannerapifunc.azurewebsites.net/api/list-task?code=88TNpVcZRm7Onbxx5F8/TAX1/AiiXwWfdq57a50m6HoIobll4BtI1A==')
+                .then(response => response.json())
+                .then(data => {
+                    let userList = [];
+                    data.items.forEach(function (user) {
+                        userList.push({ user
+                        })
+    
+                    });
+                    this.setState({userList: userList});
+                });
         }
 
 
